@@ -23,8 +23,8 @@ spec:
       canaryService: rollout-demo-canary
       trafficRouting:
         istio:
-          virtualService::
-            name: rollout-vsvc
+          virtualServices:
+          - name: rollout-vsvc
             routes:
             - primary
     steps:
