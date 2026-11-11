@@ -19,6 +19,8 @@ spec:
         - containerPort: 80
   strategy:
     canary:
+      stableService: rollout-demo-stable
+      canaryService: rollout-demo-canary
       trafficRouting:
         istio:
           virtualService::
